@@ -1,0 +1,58 @@
+<html>
+<head>
+    <script>
+            function fun(){
+                    var n=document.getElementById("nms").value;
+                    var arr=n.split(",");
+                    //alert(arr);
+                    var min=parseInt(arr[0]);
+                    for(var i=1; i<arr.length; i++){
+                    
+                            a=parseInt(arr[i]);
+                           
+                            min=a<min?a:min;
+                           
+                    }
+                    document.getElementById("para").innerHTML="Result : "+min;
+                }
+    </script>
+    <style>
+        
+        div{
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            text-align: center;
+            background: cyan;
+            
+        }
+        input{
+            background: hotpink;
+            border: 2px solid green;
+            text-align: center;
+            color: white;
+        }
+        #submit{
+            background:tomato;
+
+        }
+        ::placeholder{
+            color: white;
+        }
+    
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="nms" placeholder="Enter  multiple Number " ></br></br>
+        <input type="submit" id="submit" onclick=" return fun()" placeholder="Add">
+        <p id="para" style="color: brown;"></p>
+    </div>
+    
+</body>
+
+
+</html>
