@@ -1,0 +1,49 @@
+
+Todays hands on activity from Design of your system
+
+______________________________________________________________________________________________________________
+
+1.List down possible UI components in your system according to  different actors interaction.
+2.Draw simple page navigation (Page flow diagram for your system) from each actor interaction point of view. 
+3.Draw rough sketch of each compoent to understand User Interface to perform particular operation.
+4.Identify and list down possible Web api urls (REST API) urls which would be invoked from components to send or fetch data from online Web Applications
+
+	a.Fetch products list from online application:
+
+		Url : http://localhost:8000/api/products
+		Type : GET
+		Response: json data products json collection  
+		body: no
+
+	b.Fetch products details from online application:
+
+		Url : http://localhost:8000/api/products/34
+		Type : GET
+		Response: json object of product
+		 
+
+	b.Fetch products details from online application:
+
+		Url : http://localhost:8000/api/products/
+		Type : POST
+		Response: 200
+		request body: json object
+
+
+	b.Validate user  from online aplicaiton
+		Url : http://localhost:8000/api/account/login
+		Type : POST
+		Response: json data products json collection  
+		body: {username:'ravi', password:'123'}
+	c.output:
+		Response : 200
+
+5.List Business entities in your system.
+6.List  Business operatins in your system.
+7.List  Database tables in your system.
+8.List possible stored procedures in your system
+
+
+
+
+
